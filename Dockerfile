@@ -3,7 +3,7 @@ MAINTAINER ajoergensen
 
 RUN \
 	apk add --no-cache tinyproxy && \
-	rm /etc/tinyproxy/*
+	rm -rf /etc/tinyproxy/*
 
 COPY root/ /
 
